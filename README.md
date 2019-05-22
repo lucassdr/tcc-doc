@@ -12,3 +12,5 @@
 * [MongoDB](https://github.com/lucassdr/TCC-Unigranrio/wiki/Mongo-DB)
 * [Comunicação e notificações](https://github.com/lucassdr/TCC-Unigranrio/wiki/8.-Comunica%C3%A7%C3%A3o-e-notifica%C3%A7%C3%B5es)
 * [Diagrama (Croqui)](https://github.com/lucassdr/TCC-Unigranrio/wiki/9.-Diagrama-(Croqui))
+
+###### versão 1.0.1
