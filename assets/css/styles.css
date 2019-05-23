@@ -70,6 +70,10 @@ code {
   display: inline-block;
 }
 
+button{
+  margin: 10px;
+}
+
 .btn, a.btn {
   -webkit-transition: all 0.4s ease-in-out;
   -moz-transition: all 0.4s ease-in-out;
@@ -501,6 +505,7 @@ select {
 .doc-section h3 {
   font-size: 20px;
   font-weight: bold;
+  color: #474747;
 }
 
 .doc-section h4 {
@@ -510,7 +515,7 @@ select {
 
 .doc-section h5 {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: bold; 
 }
 
 .doc-section h6 {
@@ -651,7 +656,7 @@ select {
 }
 
 .body-green .table > thead > tr > th {
-  border-bottom-color: #bbe1c1;
+  border-bottom-color: #f3c6c2;
 }
 
 .body-blue .table > thead > tr > th {
