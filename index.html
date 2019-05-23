@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>DevOps: do desenvolvimento à produção.</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/assets/images/favicon.png">
+    <link
+        href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800'
+        rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.8.2/js/all.js"
+        integrity="sha384-DJ25uNYET2XCl5ZF++U8eNxPWqcKohUUBUpKGlNLMchM7q4Wjg2CUpjHLaL8yYPH"
+        crossorigin="anonymous"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+
+</head>
+
+<body class="body-green">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                            <span class="text-highlight">DevOps: do desenvolvimento à produção</span><span
+                                class="text-bold">.Docs</span>
+                        </a>
+                    </h1>
+
+                </div>
+                <!--//branding-->
+
+                <!-- <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active">Quick Start</li>
+                </ol> -->
+
+            </div>
+            <!--//container-->
+        </header>
+        <!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fas fa-file-code"></i> Documentação</h1>
+                    <div class="meta"><i class="far fa-clock"></i> <strong> Última atualização deste documento:
+                            23.05.2019 - 01h01m</strong></div>
+                </div>
+                <!--//doc-header-->
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
+                        <div class="content-inner">
+
+                            <section id="apresentacao-secao" class="doc-section">
+
+                                <h2 class="section-title">Apresentação</h2>
+                                <div id="apresentacao-nome-do-projeto" class="section-block">
+                                    <h1 class="block-title">Nome do projeto</h1>
+                                    <h3>DevOps: do desenvolvimento à produção.</h3>
+                                </div>
+                                <!--//section-block-->
+                                <div id="apresentacao-descricao" class="section-block">
+                                    <h1 class="block-title">Descrição</h1>
+                                    <h3>Aqui entrará uma descrição detalhada</h3>
+                                </div>
+                                <!--//section-block-->
+                                <div id="apresentacao-autores" class="section-block">
+                                    <h1 class="block-title">Autores do projeto</h1>
+                                    <h3>Lucas Sodré Teixeira</h3>
+                                    <br>
+                                    <h4>Autores da aplicação Escola Rest utilizada para demonstração</h4>
+                                    <p>Os autores da aplicação Escola REST informados abaixo permitiram que o autor do
+                                        projeto <q><strong>DevOps: do desenvolvimento à produção.</strong></q>
+                                        desenvolvido para o Projeto de
+                                        Conclusão utilizasse a aplicação de código livre Escola Rest.</p>
+                                    <ul>
+                                        <li><a href="https://github.com/felipe-b-oliveira">Felipe Barbosa</a></li>
+                                        <li><a href="https://github.com/lucassdr">Lucas Sodré</a></li>
+                                        <li><a href="https://github.com/momanhaes">Matheus Manhães</a></li>
+                                        <li><a href="https://github.com/mgenteluci">Mathues Genteluci</a></li>
+                                    </ul>
+                                </div>
+                                <!--//section-block-->
+                            </section>
+                            <!--//doc-section-->
+                            <hr>
+                            <hr>
+                            <!-- OBJETIVOS -->
+                            <section id="objetivos-secao" class="doc-section">
+
+                                <h2 class="section-title">Objetivos</h2>
+                                <div id="apresentacao-nome-do-projeto" class="section-block">
+                                    <!-- <h1 class="block-title">Nome do projeto</h1>
+                                    <h3>DevOps: do desenvolvimento à produção.</h3> -->
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O
+                                        desenvolvimento de software sempre teve os seus processos alterados ao longo
+                                        tempo buscando melhor desempenho desde o levantamento de requisitos até a versão
+                                        em produção. As fábricas de software através dos métodos ágeis conseguiram
+                                        implementar diversas melhorias no processo, fazendo iterações e realizando a
+                                        implantação de pequenos módulos para maximizar o ROI (Return on Investiment). Os
+                                        métodos ágeis possibilitaram otimizações na parte de desenvolvimento e operação,
+                                        fazendo com que o tempo ocioso fosse mitigado e comparado aos primeiros métodos
+                                        tradicionais houvesse um ganho de performance. Porém, tais processos possuem
+                                        diversas falhas do início ao fim do desenvolvimento do software e após ser
+                                        implantado em produção, fazendo com que a eficiência fosse contestada.
+                                    </p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        Diversos problemas foram notados durante o ciclo de vida do software. Durante a
+                                        codificação diversos defeitos podem ser implementados no software, seja por
+                                        motivos como a falta de conhecimento do desenvolvedor, curto prazo ou requisito
+                                        incorreto. Caso o defeito seja implementado por conta do requisito incorreto a
+                                        equipe de QA (Quality Assurance) ou Garantia de Qualidade, irá permitir que este
+                                        defeito seja passado adiante, podendo ser percebido pela homologação do cliente
+                                        ou descoberto somente em produção. Para que uma versão de correção seja
+                                        implementada o processo poderá demorar algumas horas, pois é necessário que a
+                                        correção seja criada, gerada versão em ambiente de testes e a correção ser
+                                        testada, gerada a versão em ambiente de homologação e ser aprovada, gerada
+                                        versão no servidor de produção e aguardar o tempo de reinício do servidor, que
+                                        em média possui tempo aproximado entre 3 e 10 minutos, fazendo com que grandes
+                                        prejuízos possam acontecer.
+                                    </p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        Pensando nesses problemas foi criado o conceito de DevOps, que é a combinação de
+                                        filosofias culturais, práticas e ferramentas que aumentam a capacidade de uma
+                                        empresa de distribuir aplicativos e serviços em alta velocidade: otimizando e
+                                        aperfeiçoando produtos em um ritmo mais rápido do que o das empresas que usam
+                                        processos tradicionais de desenvolvimento de software e gerenciamento de
+                                        infraestrutura. Essa velocidade permite que as empresas atendam melhor aos seus
+                                        clientes e compitam de modo mais eficaz no mercado.. [AWS Amazon]. Com a
+                                        implementação de um modelo de DevOps, as equipes de desenvolvimento e operações
+                                        não são mais separadas. Com as combinações de filosofia, prática e ferramentas
+                                        essas duas equipes são combinadas em uma só. Os engenheiros trabalham durante
+                                        todo o ciclo de vida do software, desde a fase de desenvolvimento e testes à
+                                        fase de implantação e operações, e desenvolvem várias qualificações não
+                                        limitadas a uma única função. Para incrementar essa única equipe de engenheiros
+                                        as partes de controle de qualidade e segurança podem passar a integrar essa
+                                        única equipe que gira em torno do software. As políticas de DevOps utilizam de
+                                        práticas para automatizar processos que historicamente sempre foram manuais e
+                                        lentos. Eles usam uma pilha de tecnologia e ferramentas que os ajudam a operar e
+                                        desenvolver aplicativos de modo rápido e confiável. Essas ferramentas também
+                                        ajudam os engenheiros a realizar tarefas independentemente (por exemplo,
+                                        implantação de código e provisionamento de infraestrutura) que normalmente
+                                        exigiria a ajuda de outras equipes, fazendo com que a agilidade da equipe
+                                        cresça. [AWS Amazon].
+                                    </p>
+                                    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                        Filosofias culturais, práticas e ferramentas culminam em benefícios nas áreas de
+                                        velocidade de operação, entrega rápida de versões, confiabilidade do código em
+                                        produção, escalabilidade de acordo com a demanda de acessos, colaboração entre
+                                        pessoas e times e segurança. Tais benefícios são alcançados através de práticas
+                                        como Integração Contínua, Entrega Contínua, Microsserviços, Infraestrutura como
+                                        código, Monitoramento e registro e Comunicação e colaboração.</p>
+                                </div>
+
+                            </section>
+
+                            <hr>
+                            <hr>
+
+
+
+                            <!-- INFORMAÇÕES TÉCNICAS -->
+                            <section id="infotech-secao" class="doc-section">
+
+                                <h2 class="section-title">Informações técnicas</h2>
+                                <div id="plataforma-infotech" class="section-block">
+                                    <h1 class="block-title">Plataformas em nuvem</h1>
+                                    <ul>
+                                        <li><a href="https://aws.amazon.com/">Amazon Web Services</a></li>
+                                        <li><a href="https://azure.microsoft.com/">Microsoft Azure</a></li>
+                                        <li><a href="https://heroku.com">Heroku</a></li>
+                                    </ul>
+                                </div>
+                                <div id="linguagem-infotech" class="section-block">
+                                    <h1 class="block-title">Linguagem de programação</h1>
+                                    <ul>
+                                        <li><a href="https://nodejs.org">NodeJS</a></li>
+                                    </ul>
+                                </div>
+                                <div id="banco-infotech" class="section-block">
+                                    <h1 class="block-title">Banco de dados</h1>
+                                    <ul>
+                                        <li><a href="https://www.mongodb.com">MongoDB</a></li>
+                                    </ul>
+                                </div>
+                                <div id="visaogeral-infotech" class="section-block">
+                                    <h1 class="block-title">Visão geral</h1>
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Nome</th>
+                                                <th scope="col">Projeto</th>
+                                                <th scope="col">Descrição curta</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Visual Studio Code</td>
+                                                <td><a
+                                                        href="https://code.visualstudio.com/">https://code.visualstudio.com/</a>
+                                                </td>
+                                                <td>Editor de código fotne</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>GitHub</td>
+                                                <td><a href="https://github.com/">https://github.com/</a></td>
+                                                <td>Repositório para código de programação</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>Travis CI</td>
+                                                <td><a href="https://travis-ci.org/">https://travis-ci.org/</a></td>
+                                                <td>Integração Contínua</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">4</th>
+                                                <td>Heroku</td>
+                                                <td><a href="https://heroku.com/">https://heroku.com/</a></td>
+                                                <td>Plataforma de hospedagem em nuvem</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">5</th>
+                                                <td>Amazon Web Services (AWS)</td>
+                                                <td><a href="https://aws.amazon.com/">https://aws.amazon.com/</a></td>
+                                                <td>Plataforma de hospedagem em nuvem</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">6</th>
+                                                <td>Microsoft Azure</td>
+                                                <td><a
+                                                        href="https://azure.microsoft.com/">https://azure.microsoft.com/</a>
+                                                </td>
+                                                <td>Plataforma de hospedagem em nuvem</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">7</th>
+                                                <td>MongoDB</td>
+                                                <td><a href="https://www.mongodb.com/">https://www.mongodb.com/</a></td>
+                                                <td>Banco de dados orientado a documento</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">8</th>
+                                                <td>Slack</td>
+                                                <td><a href="https://slack.com/">https://slack.com/</a></td>
+                                                <td>Plataforma corporativa de mensagens</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">9</th>
+                                                <td>Telegram</td>
+                                                <td><a href="https://telegram.org/">https://telegram.org/</a></td>
+                                                <td>Plataforma de mensagens</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">10</th>
+                                                <td>Gmail</td>
+                                                <td><a href="https://gmail.com/">https://gmail.com/</a></td>
+                                                <td>Serviço de e-mail do Google</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!--//section-block-->
+                            </section>
+                            <!--//doc-section-->
+
+                            <hr>
+                            <hr>
+
+                            <!-- DIAGRAMA (CROQUI) -->
+                            <section id="diagrama-secao" class="doc-section">
+                                <h2 class="section-title">Diagrama <i><small>Croqui</small></i></h2>
+                                <div id="fluxo-diagrama" class="section-block">
+                                    <h1 class="block-title">Fluxo do DevOps proposto</h1>
+                                    <br>
+                                    <img class="img-fluid" src="./assets//images/croqui_docz.png"
+                                        alt="imagem do diagrama devops">
+                                </div>
+                            </section>
+
+                            <hr>
+                            <hr>
+
+                            <!-- DIAGRAMA (CROQUI) -->
+                            <section id="diagrama-secao" class="doc-section">
+                                <h2 class="section-title">Diagrama <i><small>Croqui</small></i></h2>
+                                <div id="apresentacao-nome-do-projeto" class="section-block">
+                                    <h1 class="block-title">Fluxo do DevOps proposto</h1>
+                                </div>
+                            </section>
+
+                            <hr>
+                            <hr>
+
+                            <!-- VERSIONAMENTO -->
+                            <section id="versionamento-secao" class="doc-section">
+                                <h2 class="section-title">Versionamento</h2>
+                                <div id="apresentacao-nome-do-projeto" class="section-block">
+                                    <ol>
+                                        <li>Os versionamentos são classificados dos mais recentes para os mais antigos.
+                                        </li>
+                                        <li>Originalmente há uma versão por dia.</li>
+                                        <ol>
+                                            <li>Havendo mais de uma versão por dia serão identificadas, além do número
+                                                da versão mais alto, pelo horário mais recente da publicação.</li>
+                                        </ol>
+                                    </ol>
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">#</th>
+                                                <th scope="col">Descrição simples</th>
+                                                <th scope="col">Data <small>dd/mm/aaaa</small></th>
+                                                <th scope="col">Horário <small>hh:mm</small></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1.0.15</th>
+                                                <td>Alterado o link da aplicação hospedada no Heroku</td>
+                                                <td>22/05/2019</td>
+                                                <td>18h11m</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1.0.14</th>
+                                                <td>Criada a página index.ejs</td>
+                                                <td>21/05/2019</td>
+                                                <td>21h29m</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">1.0.13</th>
+                                                <td>Alterada a imagem do README.md</td>
+                                                <td>21/05/2019</td>
+                                                <td>15h37m</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <h4><a href="https://github.com/lucassdr/TCC-Unigranrio/commits/master">Para versões
+                                            mais antigas consulte a documentação no GitHub. <i
+                                                class="fab fa-github"></i></a></h4>
+
+                                </div>
+                            </section>
+
+
+
+                        </div>
+                        <!--//content-inner-->
+                    </div>
+                    <!--//doc-content-->
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+
+                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                                <a class="nav-link scrollto" href="#apresentacao-secao">Apresentação</a>
+                                <nav class="doc-sub-menu nav flex-column">
+                                    <a class="nav-link scrollto" href="#apresentacao-nome-do-projeto">Nome do
+                                        projeto</a>
+                                    <a class="nav-link scrollto" href="#apresentacao-descricao">Descrição</a>
+                                    <a class="nav-link scrollto" href="#apresentacao-autores">Autores</a>
+                                </nav>
+                                <!--//nav-->
+                                <a class="nav-link scrollto" href="#objetivos-secao">Objetivos</a>
+                                <a class="nav-link scrollto" href="#infotech-secao">Informações técnicas</a>
+                                <nav class="doc-sub-menu nav flex-column">
+                                    <a class="nav-link scrollto" href="#plataforma-infotech">Plataforma em nuvem</a>
+                                    <a class="nav-link scrollto" href="#linguagem-infotech">Linguagem de programação</a>
+                                    <a class="nav-link scrollto" href="#banco-infotech">Banco de dados</a>
+                                    <a class="nav-link scrollto" href="#visaogeral-infotech">Visão geral</a>
+                                </nav>
+                                <!--//nav-->
+                                <a class="nav-link scrollto" href="#diagrama-secao">Diagrama (Croqui)</a>
+                                <nav class="doc-sub-menu nav flex-column">
+                                    <a class="nav-link scrollto" href="#fluxo-diagrama">Fluxo do DevOps proposto</a>
+                                </nav>
+                                <a class="nav-link scrollto" href="#versionamento-secao">Versionamento</a>
+                            </nav>
+                            <!--//doc-menu-->
+
+                        </div>
+                    </div>
+                    <!--//doc-sidebar-->
+                </div>
+                <!--//doc-body-->
+            </div>
+            <!--//container-->
+        </div>
+        <!--//doc-wrapper-->
+
+        <div id="promo-block" class="promo-block">
+            <div class="container">
+                <div class="promo-block-inner">
+                    <div class="row">
+                        <div class="figure-holder col-lg-5 col-md-6 col-12">
+                            <div class="figure-holder-inner">
+                                <img class="img-fluid" src="/assets/images/logo.png" alt="Instance Theme" />
+                            </div>
+                        </div>
+                        <!--//figure-holder-->
+                        <div class="content-holder col-lg-7 col-md-6 col-12">
+                            <div class="content-holder-inner">
+                                <div class="desc">
+                                    <h4 class="content-title">
+                                        <p>Página desenvolvida para a facilidade de acesso à documentação do
+                                            Trabalho de Conclusão de Curso (TCC) da Universidade do Grande Rio
+                                            (UNIGRANRIO), desenvolvido pelo aluno Lucas Sodré Teixeira, do curso de
+                                            Sistemas de Informação.
+                                        </p>
+                                        <h5>Acesse a aplicação nas plataformas em nuvem</h5>
+                                        <button type="button" class="btn btn-lg btn-primary" disabled><i
+                                                class="fas fa-external-link-alt"></i> AWS</button>
+                                        <a href="http://escolarest.azurewebsites.net" target="blank">
+                                            <button type="button" class="btn btn-lg btn-primary"><i
+                                                    class="fas fa-external-link-alt"></i> Azure</button>
+                                        </a>
+                                        <a href="https://tcc-unigranrio-si.herokuapp.com/" target="blank">
+                                            <button type="button" class="btn btn-lg btn-primary"><i
+                                                    class="fas fa-external-link-alt"></i> Heroku</button>
+                                        </a>
+                                </div>
+                                <!--//desc-->
+
+
+                                <!-- <div class="author"><a href="https://www.lucassdr.com.br">Lucas Sodré Teixeira</a></div> -->
+                            </div>
+                            <!--//content-holder-inner-->
+                        </div>
+                        <!--//content-holder-->
+                    </div>
+                    <!--//row-->
+                </div>
+                <!--//promo-block-inner-->
+            </div>
+            <!--//container-->
+        </div>
+        <!--//promo-block-->
+
+    </div>
+    <!--//page-wrapper-->
+
+    <footer id="footer" class="footer text-center">
+        <div class="container">
+            <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+            <small class="copyright">Criado com <i class="fas fa-mug-hot"></i> por <a href="https://www.lucassdr.com.br"
+                    target="_blank">Lucas Sodré Teixeira</a> para o TCC.</small>
+
+        </div>
+        <!--//container-->
+    </footer>
+    <!--//footer-->
+
+
+    <!-- Main Javascript -->
+    <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+
+</body>
+
+</html>
