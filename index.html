@@ -29,6 +29,7 @@
 </head>
 
 <body class="body-green">
+    <div id="scrolltop"></div>
     <div class="page-wrapper">
         <!-- ******Header****** -->
         <header id="header" class="header">
@@ -466,7 +467,7 @@
     </footer>
     <!--//footer-->
 
-
+    <a class="scrolltop" href="#scrolltop" style="display: inline;"><span class="fa fa-angle-up"></span></a>
     <!-- Main Javascript -->
     <script type="text/javascript" src="assets/plugins/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
@@ -474,6 +475,17 @@
     <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>
     <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>
     <script type="text/javascript" src="assets/js/main.js"></script>
+    <script>
+        $("a[href^='#scrolltop']").click(function (e) {
+            e.preventDefault();
+
+            var position = $($(this).attr("href")).offset().top;
+
+            $("body, html").animate({
+                scrollTop: position
+            } /* speed */);
+        });
+    </script>
 
 </body>
 
